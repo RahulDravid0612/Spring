@@ -1,4 +1,4 @@
-package com.example.Spring.scope;
+package com.example.Spring.Component;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Scope(value=ConfigurableBeanFactory.SCOPE_PROTOTYPE,proxyMode= ScopedProxyMode.TARGET_CLASS)
-public class JdbcConnection {
+public class ComponentJdbcConnection {
     @Autowired
-    public JdbcConnection(){
-        System.out.println(" JdbcConnection ");
+    public ComponentJdbcConnection(){
+        System.out.println(" ComponentJdbcConnection ");
     }
 }

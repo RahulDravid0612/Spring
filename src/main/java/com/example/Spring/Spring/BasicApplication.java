@@ -1,12 +1,14 @@
-package com.example.Spring;
+package com.example.Spring.Spring;
 
-import com.example.Spring.basic.BinarySearchImpl;
+import com.example.Spring.Spring.basic.BinarySearchImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
+@ComponentScan("com.example.Spring.Spring.basic")
 public class BasicApplication {
 
 	public static void main(String[] args)
